@@ -1,0 +1,7 @@
+Hanoi(int maxDiskIndex, int d) 
+  IF (maxDiskIndex == 0) THEN 
+    RETURN
+  Hanoi(maxDiskIndex - 1, -d)
+  Shift(maxDiskIndex, d);
+  Hanoi(maxDiskIndex - 1, -d)
+END Hanoi;
